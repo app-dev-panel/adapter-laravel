@@ -36,8 +36,8 @@ return [
     ],
 
     'ignored_requests' => [
-        '/debug/api/**',
-        '/inspect/api/**',
+        '/debug/**',
+        '/inspect/**',
         '/telescope/**',
     ],
 
@@ -61,6 +61,10 @@ return [
      * Example: ['/app' => '/home/user/project']
      */
     'path_mapping' => [],
+
+    'panel' => [
+        'static_url' => '',  // Base URL for panel assets (empty = GitHub Pages default). Use http://localhost:3000 for Vite dev with HMR.
+    ],
 
     'api' => [
         'enabled' => true,
